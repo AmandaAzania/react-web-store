@@ -1,0 +1,23 @@
+/* src/components/UserSpotlightSection.css */
+
+.user-spotlight-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .user-spotlight-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .user-spotlight-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .user-spotlight-list .user-spotlight-card {
+    margin: 15px;
+  }
+  

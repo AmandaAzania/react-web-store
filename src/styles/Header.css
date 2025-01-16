@@ -1,0 +1,16 @@
+/* src/styles/Header.css */
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    color: rgb(154, 8, 8) !important;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: #007bff;
+    border-radius: 5px;
+}

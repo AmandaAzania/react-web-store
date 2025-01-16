@@ -1,0 +1,146 @@
+/* Full-page container */
+.landing-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Banner Section */
+  .banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://i.postimg.cc/x8nCNDWd/IMG-1664.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner-content {
+    text-align: left;
+    color: white;
+    padding-left: 40px;
+    max-width: 600px;
+  }
+  
+  .banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  
+  .shop-now-btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop-now-btn:hover {
+    background-color: #ff4500;
+  }
+  
+  /* Best Sellers Section */
+  .best-sellers {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .best-sellers h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .product-item {
+    width: 23%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .product-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .product-item p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .buy-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Footer Section */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .footer a {
+    color: #ff6347;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .product-item {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-item {
+      width: 100%;
+    }
+  }
+  
