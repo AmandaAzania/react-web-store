@@ -14,18 +14,25 @@ const Header = () => {
 
   return (
     <header>
+        
       <div className="container">
-        <h1>Welcome to the Store</h1>
+      <li className="store-logo"><a href="/">GLOO</a></li>
         <nav>
           <ul>
+            {/* Store logo (on the far left corner) */}
+        
+
+            {/* Other navigation items */}
             <li><a href="/">Home</a></li>
             <li><a href="/store">Store</a></li>
             <li><a href="/cart">Cart ({cart.length})</a></li> {/* Cart count here */}
-            <li>
+            
+            {/* User login/logout links */}
+            <li className="user-actions">
               {isLoggedIn ? (
                 <>
                   <span>Welcome, {user.username}!</span>
-                  <button onClick={handleLogout}>Logout</button>
+                  <button className="logout-btn" onClick={handleLogout}>Logout</button>
                 </>
               ) : (
                 <>

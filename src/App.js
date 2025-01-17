@@ -19,15 +19,13 @@ function App() {
         <Route path="/store" element={<StorePage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/login" element={<Auth />} />
-        <Route path="/register" element={<RegistrationForm />} /> {/* Add the register route */}
+        <Route path="/register" element={<RegistrationForm />} />
       </Routes>
 
-      {/* Conditionally render the UserSpotlightSection */}
-      {/* Exclude UserSpotlightSection on CartPage */}
       <Routes>
         <Route path="/" element={<UserSpotlightSection />} />
         <Route path="/store" element={<UserSpotlightSection />} />
-        {/* Don't render on Cart page */}
+        <Route path="/cart" element={null} /> {/* Don't render spotlight section on Cart page */}
       </Routes>
 
       <Footer />

@@ -29,13 +29,18 @@ const CartPage = () => {
   };
 
   // Calculate the total price of products in the cart
-  const totalPrice = cart.reduce((total, product) => total + (parseFloat(product.price.replace('$', '')) * product.quantity), 0).toFixed(2);
+  const totalPrice = cart.reduce((total, product) => total + (product.price * product.quantity), 0).toFixed(2);
 
   // Shipping costs based on the selected method
   const shippingCost = shippingMethod === 'standard' ? 5.99 : shippingMethod === 'express' ? 9.99 : 14.99;
 
   // Final total calculation (product total + shipping cost)
   const finalTotal = (parseFloat(totalPrice) + shippingCost).toFixed(2);
+
+  // Helper function to format prices with "R" symbol
+  const formatPrice = (price) => {
+    return `R${price.toFixed(2)}`; // Format to 2 decimal places with the "R" symbol
+  };
 
   return (
     <div className="cart-page">
@@ -48,7 +53,8 @@ const CartPage = () => {
             <img src={product.image} alt={product.name} />
             <div className="item-details">
               <h3>{product.name}</h3>
-              <p>{product.price}</p>
+              {/* Display price with "R" symbol */}
+              <p>{formatPrice(product.price)}</p>
               <div className="quantity-controls">
                 <button onClick={() => handleRemoveOrDecrease(product)}>-</button>
                 <span>{product.quantity}</span>
@@ -63,17 +69,17 @@ const CartPage = () => {
       <div className="shipping-method">
         <label>Shipping Method</label>
         <select value={shippingMethod} onChange={handleShippingChange}>
-          <option value="standard">Standard Shipping ($5.99)</option>
-          <option value="express">Express Shipping ($9.99)</option>
-          <option value="overnight">Overnight Shipping ($14.99)</option>
+          <option value="standard">Standard Shipping (R5.99)</option>
+          <option value="express">Express Shipping (R9.99)</option>
+          <option value="overnight">Overnight Shipping (R14.99)</option>
         </select>
       </div>
 
       {/* Total Price */}
       <div className="total-price">
-        <h3>Total: ${totalPrice}</h3>
-        <h3>Shipping: ${shippingCost}</h3>
-        <h3 className="final-total">Final Total: ${finalTotal}</h3>
+        <h3>Total: {formatPrice(parseFloat(totalPrice))}</h3> {/* Use the helper function */}
+        <h3>Shipping: {formatPrice(shippingCost)}</h3> {/* Use the helper function */}
+        <h3 className="final-total">Final Total: {formatPrice(parseFloat(finalTotal))}</h3> {/* Use the helper function */}
       </div>
     </div>
   );
