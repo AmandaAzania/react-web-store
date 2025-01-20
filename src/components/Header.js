@@ -32,7 +32,7 @@ const Header = () => {
             <li className="user-actions">
               {isLoggedIn ? (
                 <>
-                  <span>Welcome, {user.username}!</span>
+                  <span>Welcome back, {user.username}!</span>
                   <button className="logout-btn" onClick={handleLogout}>Logout</button>
                 </>
               ) : (
