@@ -14,19 +14,20 @@ const Header = () => {
 
   return (
     <header>
-        
       <div className="container">
-      <li className="store-logo"><a href="/">GLOO</a></li>
         <nav>
           <ul>
-            {/* Store logo (on the far left corner) */}
-        
+            {/* Store Logo (text-based link) */}
+            <li className="store-logo">
+              <a href="https://i.postimg.cc/yY026bCs/Retinol-Serum.png">GLOO Store</a> {/* Replace with your store name */}
+            </li>
 
             {/* Other navigation items */}
             <li><a href="/">Home</a></li>
             <li><a href="/store">Store</a></li>
             <li><a href="/cart">Cart ({cart.length})</a></li> {/* Cart count here */}
-            
+            <li><a href="/login" className="auth-linkL">Login</a></li>
+
             {/* User login/logout links */}
             <li className="user-actions">
               {isLoggedIn ? (
@@ -36,8 +37,7 @@ const Header = () => {
                 </>
               ) : (
                 <>
-                  <a href="/login" className="auth-link">Login</a>
-                  <a href="/register" className="auth-link">Register</a>
+                  <a href="/register" className="auth-linkR">Register</a>
                 </>
               )}
             </li>

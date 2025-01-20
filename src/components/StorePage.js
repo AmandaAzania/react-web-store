@@ -14,7 +14,7 @@ const StorePage = () => {
     alert('Added to Cart!'); // Display a message when item is added
   };
 
-  // Skincare products sample
+  // Skincare products 
   const bestSellers = [
     { id: 1, name: 'Hydrating Facial Cleanser', price: 'R25.00', image: 'https://i.postimg.cc/J4Hr267G/Cera-Ve-Hydrating-Facial-Cleanser-88ml.jpg' },
     { id: 2, name: 'Anti-Aging Serum', price: 'R35.00', image: 'https://i.postimg.cc/yxjZr7m4/SECRET-ANTI-AGE-FACIAL-SERUM-scaled.jpg' },

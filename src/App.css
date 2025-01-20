@@ -31,11 +31,11 @@ a:hover {
 
 
   /* Store Logo */
-  .store-logo a {
+  .store-logo  {
     font-family: 'Arial', sans-serif;
     font-size: 2rem;
     font-weight: bold;
-    color:rgb(157, 42, 42); /* Brand color */
+    color:rgb(42, 157, 92); /* Brand color */
     text-transform: uppercase;
     letter-spacing: 1px;
   }

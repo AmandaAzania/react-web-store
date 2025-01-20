@@ -1,4 +1,4 @@
-// src/components/UserSpotlightCard.js
+
 import React from 'react';
 import './UserSpotlightCard.css';
 

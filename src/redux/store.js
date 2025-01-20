@@ -1,7 +1,7 @@
 import { createStore } from 'redux';
 import { persistReducer, persistStore } from 'redux-persist';  // Correct import for both persistStore and persistReducer
 import storage from 'redux-persist/lib/storage';  // Storage import for localStorage/sessionStorage
-import reducer from './reducers';  // Import your root reducer
+import reducer from './reducers';  //  your root reducer
 
 const persistConfig = {
   key: 'root',

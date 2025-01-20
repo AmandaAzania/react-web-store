@@ -1,4 +1,4 @@
-// src/components/UserSpotlightSection.js
+
 import React, { useState } from 'react';
 import UserSpotlightCard from './UserSpotlightCard';
 import './UserSpotlightSection.css';
@@ -8,7 +8,7 @@ const UserSpotlightSection = () => {
     { id: 1, username: 'KailaKake', image: 'https://i.postimg.cc/bwsNMW4t/images-13.jpg', caption: 'Glow-up season is here! Obsessed with these skin-nourishing must-haves from GLOO. ✨ #GlowWithGLOO' },
     { id: 2, username: 'LisaOnuoha', image: 'https://i.postimg.cc/66CFzc3f/images-14.jpg', caption: 'Say hello to hydrated, radiant skin! My new GLOO essentials are everything. 💧🧴 #SkincareGoals' },
     { id: 3, username: 'AmandaNjingela', image: 'https://i.postimg.cc/brTR2sR4/images-15.jpg', caption: 'Skin so smooth, I can’t stop smiling! GLOO, you’re a game-changer. 🌿💖 #GLOOLovesMe' },
-    // Add more posts as necessary
+    
   ]);
 
   return (

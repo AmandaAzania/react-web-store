@@ -1,11 +1,11 @@
-// Define action types
+//  action types
 export const LOGIN = 'LOGIN';
 export const LOGOUT = 'LOGOUT';
 export const ADD_TO_CART = 'ADD_TO_CART';
 export const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
 export const REMOVE_PRODUCT = 'REMOVE_PRODUCT';
-export const REGISTER_USER = 'REGISTER_USER';  // New action type for registration
-export const SET_SHIPPING_METHOD = 'SET_SHIPPING_METHOD';  // New action type for shipping method
+export const REGISTER_USER = 'REGISTER_USER'; 
+export const SET_SHIPPING_METHOD = 'SET_SHIPPING_METHOD';  
 
 // Action creator for logging in
 export const login = (user) => {
