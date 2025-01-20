@@ -19,7 +19,7 @@ const Header = () => {
           <ul>
             {/* Store Logo (text-based link) */}
             <li className="store-logo">
-              <a href="https://i.postimg.cc/yY026bCs/Retinol-Serum.png">GLOO Store</a> {/* Replace with your store name */}
+              <a href="https://i.postimg.cc/yY026bCs/Retinol-Serum.png">GLOO Store</a>
             </li>
 
             {/* Other navigation items */}
