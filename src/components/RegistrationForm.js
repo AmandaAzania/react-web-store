@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { registerUser } from '../redux/actions';  // Import the registerUser action
 import { useNavigate } from 'react-router-dom'; // For navigation
+import { ERROR_MESSAGES } from './constants'; // Import error messages
 
 const RegistrationForm = () => {
   const dispatch = useDispatch();
@@ -30,23 +31,23 @@ const RegistrationForm = () => {
     const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$/;
 
     if (!formData.firstName) {
-      formErrors.firstName = 'First name is required';
+      formErrors.firstName = ERROR_MESSAGES.firstName;
     }
 
     if (!formData.surname) {
-      formErrors.surname = 'Surname is required';
+      formErrors.surname = ERROR_MESSAGES.surname;
     }
 
     if (!formData.username) {
-      formErrors.username = 'Username is required';
+      formErrors.username = ERROR_MESSAGES.username;
     }
 
     if (!formData.email || !emailRegex.test(formData.email)) {
-      formErrors.email = 'Please enter a valid email address';
+      formErrors.email = ERROR_MESSAGES.email;
     }
 
     if (!formData.password || !passwordRegex.test(formData.password)) {
-      formErrors.password = 'Password must be at least 8 characters long and contain at least one letter and one number';
+      formErrors.password = ERROR_MESSAGES.password;
     }
 
     setErrors(formErrors);
